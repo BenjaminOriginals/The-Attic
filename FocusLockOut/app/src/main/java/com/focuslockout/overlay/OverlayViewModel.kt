@@ -80,7 +80,7 @@ class OverlayViewModel(application: Application) : AndroidViewModel(application)
     fun bind(request: OverlayRequest) {
         _uiState.update { current ->
             val wanted = resolveChallenge(request.challengeType)
-            val keepProgress = current.request != null &&
+            val keepProgress = current.request?.mode == request.mode &&
                 current.phase != OverlayPhase.PASSED &&
                 current.challenge == wanted
             if (keepProgress) current.copy(request = request) else freshState(request, wanted)

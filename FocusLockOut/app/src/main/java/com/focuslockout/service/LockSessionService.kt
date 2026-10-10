@@ -66,6 +66,7 @@ class LockSessionService : Service() {
                 if (state.isExpired(now)) repository.endSessionIfExpired(now)
                 // Ran to the end (rather than being emergency-unlocked): celebrate it.
                 if (engagedEndTime != 0L && now >= engagedEndTime) postCompletionNotification()
+                engagedEndTime = 0L
                 shutdown()
                 return@collectLatest
             }
