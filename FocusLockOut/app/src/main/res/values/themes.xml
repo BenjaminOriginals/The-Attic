@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Window-level theme only: everything visible is drawn by Compose (see ui/theme). Keeping the
+         window black avoids a white flash before the first frame. -->
+    <style name="Theme.FocusLockOut" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/pure_black</item>
+        <item name="android:colorBackground">@color/pure_black</item>
+        <item name="android:colorAccent">@color/neon_green</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- The overlay snaps in with no window animation so the blocked app never gets a visible frame. -->
+    <style name="Theme.FocusLockOut.Overlay">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+</resources>

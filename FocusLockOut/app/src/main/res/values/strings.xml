@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Focus Lock Out</string>
+    <string name="app_wordmark">FOCUS LOCK OUT</string>
+    <string name="app_tagline">Distraction now has a bouncer.</string>
+
+    <!-- Common actions -->
+    <string name="action_grant">GRANT</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_not_now">Not now</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_permission_granted">Granted</string>
+    <string name="cd_permission_missing">Missing</string>
+
+    <!-- Accessibility service (shown in system Settings) -->
+    <string name="accessibility_service_label">Focus Lock Out</string>
+    <string name="accessibility_service_description">Detects which app is in the foreground so Focus Lock Out can block the apps you chose during an armed focus session. It only reads app package names; it never reads screen content, text you type, or personal data, and nothing leaves your device.</string>
+
+    <!-- Permissions banner -->
+    <string name="permissions_title">LOCK SYSTEMS OFFLINE</string>
+    <string name="permissions_title_optional">ALMOST READY</string>
+    <string name="permissions_body">Focus Lock Out needs these system permissions before it can enforce a lock. Each button opens the right Settings page.</string>
+    <string name="permission_accessibility_title">Accessibility service</string>
+    <string name="permission_accessibility_description">Spots blocked apps the instant they open.</string>
+    <string name="permission_accessibility_not_running">Enabled, but Android is not running the service. Turn it off and on again in Accessibility settings.</string>
+    <string name="permission_overlay_title">Display over other apps</string>
+    <string name="permission_overlay_description">Lets the lock wall appear on top of blocked apps.</string>
+    <string name="permission_usage_title">Usage access</string>
+    <string name="permission_usage_description">Backup detection, so a blocked app can\'t slip past the lock.</string>
+    <string name="permission_notifications_title">Notifications (optional)</string>
+    <string name="permission_notifications_description">Shows the live countdown while a lock is armed.</string>
+    <string name="permission_restricted_settings_hint">Accessibility switch greyed out? Open App info, tap ⋮ and choose \"Allow restricted settings\".</string>
+    <string name="accessibility_disclosure_title">Why accessibility?</string>
+    <string name="accessibility_disclosure_body">Focus Lock Out uses the Accessibility Service API only to detect which app is currently in the foreground, so it can cover apps on your block list while a focus session is armed.\n\nIt does not read screen content, see what you type, or collect, store or share any personal data. You can turn it off at any time in Settings.</string>
+    <string name="accessibility_disclosure_accept">Open settings</string>
+
+    <!-- Session setup -->
+    <string name="setup_block_list_label">BLOCK LIST</string>
+    <string name="setup_block_list_empty">No apps selected yet</string>
+    <plurals name="setup_block_list_count">
+        <item quantity="one">%d app will be blocked</item>
+        <item quantity="other">%d apps will be blocked</item>
+    </plurals>
+    <string name="setup_choose_apps">CHOOSE APPS</string>
+    <string name="setup_duration_label">DURATION</string>
+    <string name="setup_duration_value">%1$d MIN</string>
+    <string name="setup_challenge_label">PENALTY MODE</string>
+    <string name="setup_arm_lock">ARM LOCK</string>
+    <string name="setup_arm_needs_permissions">Grant the permissions above to arm the lock.</string>
+    <string name="setup_arm_needs_apps">Pick at least one app to block.</string>
+    <string name="arm_confirm_title">Arm the lock?</string>
+    <string name="arm_confirm_body">For the next %1$d minutes your blocked apps are walled off. Getting in early means beating the %2$s, and apps can\'t be removed from the block list until the session ends.</string>
+    <string name="arm_confirm_accept">ARM IT</string>
+
+    <!-- Challenges -->
+    <string name="challenge_typing_title">Typing Penalty</string>
+    <string name="challenge_typing_description">Type an absurd 80–100 word passage with zero mistakes. Case and punctuation count.</string>
+    <string name="challenge_shake_title">Shake Penalty</string>
+    <string name="challenge_shake_description">Shake your phone 100 times. Your arms will hate you.</string>
+    <string name="challenge_shake_unavailable">Needs an accelerometer, which this device doesn\'t have.</string>
+    <string name="challenge_math_title">Math Wall</string>
+    <string name="challenge_math_description">Solve 5 multi-step problems in a row. One miss resets the streak.</string>
+
+    <!-- Active dashboard -->
+    <string name="dashboard_title">LOCK ARMED</string>
+    <string name="dashboard_remaining">REMAINING</string>
+    <string name="dashboard_blocked_apps">Blocked apps</string>
+    <string name="dashboard_penalty">Penalty</string>
+    <string name="dashboard_ends_at">Unlocks at</string>
+    <string name="dashboard_add_apps">ADD MORE APPS</string>
+    <string name="dashboard_emergency_unlock">EMERGENCY UNLOCK</string>
+    <string name="dashboard_emergency_caption">Beat the %1$s to end this session early.</string>
+    <string name="dashboard_enforcement_offline">Enforcement is offline: a required permission was revoked, so blocked apps are not being covered.</string>
+
+    <!-- App selection -->
+    <string name="apps_title">Block list</string>
+    <plurals name="apps_blocked_count">
+        <item quantity="one">%d app blocked</item>
+        <item quantity="other">%d apps blocked</item>
+    </plurals>
+    <string name="apps_search_hint">Search apps</string>
+    <string name="apps_show_system">Show system apps</string>
+    <string name="apps_session_locked_notice">A lock is armed: you can add apps, but blocked apps stay blocked until the session ends.</string>
+    <string name="apps_unblock_refused">Nice try. Apps stay blocked until the session ends.</string>
+    <string name="apps_empty">No matching apps.</string>
+
+    <!-- Lock overlay -->
+    <string name="overlay_unknown_app">this app</string>
+    <string name="overlay_locked_title">%1$s IS LOCKED</string>
+    <string name="overlay_locked_body">You armed a focus lock. Whatever you were about to do can wait.</string>
+    <string name="overlay_lock_lifts_in">UNTIL THE LOCK LIFTS</string>
+    <string name="overlay_back_to_focus">BACK TO FOCUS</string>
+    <string name="overlay_break_lock">Break the lock: %1$s</string>
+    <string name="overlay_grace_hint">Passing gives you %1$d minutes in this app before the lock re-arms.</string>
+    <string name="overlay_give_up">GIVE UP</string>
+    <string name="overlay_unlocking_app">Unlocking %1$s</string>
+    <string name="overlay_unlocking_session">Ending the focus session early</string>
+    <string name="overlay_shake_fallback">No accelerometer on this device, so the shake penalty became a math wall.</string>
+
+    <string name="typing_instructions">Type the passage below exactly. Every letter, capital, space and punctuation mark counts. Paste is disabled.</string>
+    <string name="typing_placeholder">Start typing…</string>
+    <string name="typing_progress">%1$d / %2$d characters</string>
+    <string name="typing_mismatch">Wrong character at position %1$d. Fix it to keep going.</string>
+    <string name="typing_paste_blocked">Paste blocked. Your thumbs got you here; they can type you out.</string>
+
+    <string name="shake_instructions">Shake your phone hard. Really commit.</string>
+    <string name="shake_target_suffix">/ %1$d</string>
+    <string name="shake_remaining">%1$d TO GO</string>
+
+    <string name="math_instructions">Solve %1$d in a row. One wrong answer and the streak starts over with new problems.</string>
+    <string name="math_problem_counter">PROBLEM %1$d OF %2$d</string>
+    <string name="math_problem_format">%1$s = ?</string>
+    <string name="math_answer_hint">Answer</string>
+    <string name="math_submit">SUBMIT</string>
+    <string name="math_correct">Correct. Keep going.</string>
+    <string name="math_wrong">Wrong. Streak reset: %1$d brand new problems.</string>
+
+    <string name="passed_title_blocked">LOCK BROKEN</string>
+    <string name="passed_title_emergency">SESSION TERMINATED</string>
+    <string name="passed_body_blocked">You have %1$d minutes on %2$s. Then the lock re-arms.</string>
+    <string name="passed_body_emergency">Your focus session is over. The block list is lifted.</string>
+    <string name="passed_continue_to_app">CONTINUE TO %1$s</string>
+    <string name="passed_back_to_app">BACK TO FOCUS LOCK OUT</string>
+
+    <!-- Social shame -->
+    <string name="shame_label">CONFESS</string>
+    <string name="shame_share">SHARE YOUR SHAME</string>
+    <string name="share_chooser_title">Confess to…</string>
+    <plurals name="shame_blocked_app">
+        <item quantity="one">I lasted %1$d minute before breaking my focus lock on %2$s. #FocusLockOut</item>
+        <item quantity="other">I lasted %1$d minutes before breaking my focus lock on %2$s. #FocusLockOut</item>
+    </plurals>
+    <plurals name="shame_emergency">
+        <item quantity="one">I lasted %1$d minute before smashing the emergency unlock on my focus session. #FocusLockOut</item>
+        <item quantity="other">I lasted %1$d minutes before smashing the emergency unlock on my focus session. #FocusLockOut</item>
+    </plurals>
+
+    <!-- Notifications -->
+    <string name="notification_channel_session">Active focus lock</string>
+    <string name="notification_channel_complete">Session complete</string>
+    <string name="notification_session_title">Focus lock armed</string>
+    <string name="notification_session_text">Blocked apps are walled off until the timer runs out.</string>
+    <string name="notification_complete_title">Focus session complete</string>
+    <string name="notification_complete_text">You survived. Your apps are unlocked.</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Neon padlock centered in the 66dp adaptive-icon safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M43,50 V41 A11,11 0 0 1 65,41 V50"
+        android:strokeWidth="6"
+        android:strokeColor="#00FF66"
+        android:strokeLineCap="butt" />
+    <path
+        android:fillColor="#00FF66"
+        android:fillType="evenOdd"
+        android:pathData="M40,50 H68 A4,4 0 0 1 72,54 V76 A4,4 0 0 1 68,80 H40 A4,4 0 0 1 36,76 V54 A4,4 0 0 1 40,50 Z M54,57 A5,5 0 0 1 56.5,66.33 L57.5,73 H50.5 L51.5,66.33 A5,5 0 0 1 54,57 Z" />
+</vector>
